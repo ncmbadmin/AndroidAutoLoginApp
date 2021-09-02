@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidAutoLoginApp.iml" filepath="$PROJECT_DIR$/AndroidAutoLoginApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidAutoLoginApp.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidAutoLoginApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidAutoLoginApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidAutoLoginApp.app.iml" />
     </modules>
   </component>
 </project>

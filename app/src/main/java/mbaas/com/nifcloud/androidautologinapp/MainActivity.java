@@ -1,19 +1,17 @@
-package mbaas.com.nifty.androidautologinapp;
+package mbaas.com.nifcloud.androidautologinapp;
 
-import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 import android.provider.Settings.Secure;
 
-import com.nifty.cloud.mb.core.DoneCallback;
-import com.nifty.cloud.mb.core.LoginCallback;
-import com.nifty.cloud.mb.core.NCMB;
-import com.nifty.cloud.mb.core.NCMBException;
-import com.nifty.cloud.mb.core.NCMBUser;
+import com.nifcloud.mbaas.core.DoneCallback;
+import com.nifcloud.mbaas.core.LoginCallback;
+import com.nifcloud.mbaas.core.NCMB;
+import com.nifcloud.mbaas.core.NCMBException;
+import com.nifcloud.mbaas.core.NCMBUser;
 
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -29,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //**************** APIキーの設定 **************
-        NCMB.initialize(this.getApplicationContext(),"YOUR_NCMB_APPLICATION_KEY",
-                "YOUR_NCMB_CLIENT_KEY");
+        NCMB.initialize(this.getApplicationContext(),"YOUR_APPLICATION_KEY",
+                "YOUR_CLIENT_KEY");
 
         // UUIDを取得します
         uuid = Secure.getString(getApplicationContext().getContentResolver(),
